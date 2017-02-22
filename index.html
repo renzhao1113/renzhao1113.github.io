@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta content="力耐" name="keywords">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<link href="logo.icon" rel="shortcut icon" type="image/x-ico" />
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/bannerImgs.js"></script>
+	<script src="js/index.js"></script>
+
+</head>
+<body>
+<!--头部和导航栏-->
+	<div class="header">
+		<div class="navbar container">
+			<h1 class="fl"><a href="">力耐</a></h1>
+			<ul class="nav fr clearfix hidden-sm">
+				<li class="active"><a href="#">首页</a></li>
+				<li><a href="culture.html" target="_self">力耐文化</a></li>
+				<li><a href="intro.html" target="_self">公司简介</a></li>
+				<li><a href="service.html" target="_self">产品服务</a></li>
+				<li><a href="joinus.html" target="_self">加入我们</a></li>
+			</ul>
+			<!--页面小于1000px是显示另一种导航样式-->
+			<span class="navMenu fr iconfont icon-liebiao hidden-big"></span>
+			<p class="slogan hidden-sm">For Better Performance</p>
+		</div>
+
+	</div>
+	<!--小于1000px时的导航栏-->
+	<div id="nav-sm">
+		<ul class="container">
+			<li class="active"><a href="#">首页</a></li>
+			<li><a href="culture.html" target="_self">力耐文化</a></li>
+			<li><a href="intro.html" target="_self">公司简介</a></li>
+			<li><a href="service.html" target="_self">产品服务</a></li>
+			<li><a href="joinus.html" target="_self">加入我们</a></li>
+		</ul>
+	</div>
+
+	<!--轮播图-->
+	<div class="container">
+		<div class="lun-bo">
+			<ul class="clearFix"></ul>
+			<a class="left iconfont icon-xiangzuo" href="javascript:void(0)"></a>
+			<a class="right iconfont icon-xiangyou" href="javascript:void(0)"></a>
+		</div>
+		<div class="intro-box hidden-sm">
+			<h4>力耐，更好表现</h4>
+			<p>我们的研发团队，紧随不断升级的汽车制造工艺，开发的产品也在不断的升级换代。我们力求达到国际最高级别的产品使用、检验标准，并有所超越。与此同时，我们也特别注重国内使用环境，在不断技术更新的基础上，我们也与各生产商深度沟通，开发并生产出既具前瞻，又具高效能的产品，使客户爱车有更好表现，同时深具价值感。</p>
+		</div>
+	</div>
+	<!--产品-->
+	<div class="product">
+		<div class="container">
+			<h2 class="h2-1"><a href="">润滑油</a></h2>
+			<h2 class="h2-2"><a href="">养护品</a></h2>
+			<h2 class="h2-3"><a href="">维修耗材</a></h2>
+		</div>
+	</div>
+	<!--标语-->
+	<div class="container poster">
+		<h2>力耐，全球优势汽车养护用品集成者</h2>
+		<p>THE ADVANTAGE OF</p>
+		<p>GLOBAL AUTOMOBILE MAINTENANCE PRODUCTS INTEGRATORS</p>
+	</div>
+	<!--成就展示-->
+	<div id="demo" class="">
+		<div class="container clearFix">
+			<div class="linai1">
+				<img src="img/home_02.png" alt="">
+				<div class="intro">
+					<h2>LIONAX</h2>
+					<p>力耐家族，为爱车更好表现</p>
+				</div>
+			</div>
+			<div class="linai2">
+				<img src="img/home_03.jpg" alt="">
+				<div class="intro">
+					<h2>力耐机油</h2>
+					<p>每一滴均荷兰原装制造</p>
+				</div>
+			</div>
+			<div class="linai3">
+				<img src="img/home_04.jpg" alt="">
+				<div class="intro">
+					<h2>力耐客户</h2>
+					<p>一百万车主已重复使用</p>
+				</div>
+			</div>
+			<br clear="both">
+		</div>
+	</div>
+	<!--底部-->
+<div id="top" class="iconfont icon-xiangshang"></div>
+	<div class="footer">
+		<div class="container">
+			<img class="hidden-sm" src="img/code.png" alt="">
+			<p>公司名称: 广州维森汽车配件有限公司</p>
+			<p>联系电话: 020-61908466</p>
+			<p>联系地址:广州市番禺区番禺大道北555号天安科技园创新大厦602室</p>
+			<p>力耐官网 版权所有 © 2001-2016 <a href="http://www.miitbeian.gov.cn/">粤ICP备09198580号-1</a></p>
+		</div>
+	</div>
+</body>
+<script>
+	var ul1= $(".lun-bo>ul"), len = bannerImgs.length, i = 0;
+	var html = [];
+	html[0] = "<li><a href='"+bannerImgs[len-1].href+"' target='_blank'><img src='"+bannerImgs[len-1].img+"' alt=''></a></li>";
+	html[len+1] = "<li><a href='"+bannerImgs[0].href+"' target='_blank'><img src='"+bannerImgs[0].img+"' alt=''></a></li>";
+	for (; i < len; i++) {
+		var str = "<li><a href='"+bannerImgs[i].href+"' target='_blank'><img src='"+bannerImgs[i].img+"' alt=''></a></li>";
+		html[i+1] = str;
+	}
+	ul1.html(html.join(""));
+	ul1.css("width",100*(len+2) + "%");
+	var ulWidth = parseInt(ul1.css("width"));
+	ul1.css("left",-ulWidth/5+"px");
+	// 导航栏下拉菜单
+	var navCollapse = $(".header>.navbar>span");
+	navCollapse.click(function (e) {
+		$("#nav-sm").slideToggle("slow");
+	});
+	if(navigator.userAgent.indexOf("MSIE 8.0") != -1){
+		$(".navMenu").css("display","none");
+		$("#demo").addClass("demo-for-ie8");
+	}else{
+		$("#demo").removeClass("demo-for-ie8");
+	}
+	var toTop = $("#top");
+	toTop.mouseover(function () {
+		toTop.animate({
+			backgroundColor : "#d9242a"
+		},200)
+	})
+	toTop.click(function () {
+		$("html,body").animate({scrollTop : "0px"},200)
+	})
+</script>
+</html>

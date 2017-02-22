@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta content="力耐" name="keywords">
+	<title>加入我们</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<link rel="stylesheet" href="css/join.css">
+	<link href="logo.icon" rel="shortcut icon" type="image/x-ico" />
+	<script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+<!--头部和导航栏-->
+<div class="header">
+	<div class="navbar container">
+		<h1 class="fl"><a href="">力耐</a></h1>
+		<ul class="nav fr clearfix hidden-sm">
+			<li><a href="index.html" target="_self">首页</a></li>
+			<li><a href="culture.html" target="_self">力耐文化</a></li>
+			<li><a href="intro.html" target="_self">公司简介</a></li>
+			<li><a href="service.html" target="_self">产品服务</a></li>
+			<li class="active"><a href="#">加入我们</a></li>
+		</ul>
+		<!--页面小于1000px是显示另一种导航样式-->
+		<span class="navMenu fr iconfont icon-liebiao hidden-big"></span>
+		<p class="slogan hidden-sm">For Better Performance</p>
+	</div>
+
+</div>
+<!--小于1000px时的导航栏-->
+<div id="nav-sm">
+	<ul class="container">
+		<li><a href="index.html" target="_self">首页</a></li>
+		<li><a href="culture.html" target="_self">力耐文化</a></li>
+		<li><a href="intro.html" target="_self">公司简介</a></li>
+		<li><a href="service.html" target="_self">产品服务</a></li>
+		<li class="active"><a href="#">加入我们</a></li>
+	</ul>
+</div>
+
+<div class="main container">
+	<!--TODO 标题-->
+	<div class="title base-width">
+		<p class="t1">加入我们</p>
+		<p class="t2">JOIN US</p>
+	</div>
+	<div class="info base-width">
+		<h4>我们为每一位加入团队的队员提供独挡一面的发展机会。</h4>
+		<p>首先我们会根据加入者自身特点，与每位深度沟通，确定发展目标。<br>我们会根据目标制定具体的分步实现计划，提供相应培训，提供每一步的发展平台，最终实现员工的职业发展计划。</p>
+	</div>
+	<img src="img/joinus.png" alt="">
+	<!--TODO 我们的职位-->
+	<ul class="base-width">
+		<li>
+			<h3>区域经理</h3>
+			<ol>
+				<li>1、	承担直管区域的年度经营目标拟定、分析工作；</li>
+				<li>2、	组织直管区域客户发掘，合同谈判和签定，业务的经营、促销的制定及管理工作；</li>
+				<li>3、	组织直管区域客户、市场网络管理，客户销售培训、顾问管理工作；</li>
+				<li>4、	其他总公司分派到各区域的项目性工作；</li>
+			</ol>
+		</li>
+		<li>
+			<h3>财务经理</h3>
+			<ol>
+				<li>1、	组织预算、财务的执行与差异分析；</li>
+				<li>2、	督促和指导各区域客户管理；</li>
+				<li>3、	提供各区域经营决策的财务支持；</li>
+				<li>4、	维护公司资产的安全性和完整性；</li>
+				<li>5、	指导和监督财务档案管理、归档和保管等工作；</li>
+			</ol>
+		</li>
+		<li>
+			<h3>产品经理</h3>
+			<ol>
+				<li>1、	沟通科技团队与生产商，承担产品开发、改进工作；</li>
+				<li>2、	制定产品使用推广计划，协调各部门整体实现产品运作；</li>
+				<li>3、	产品使用跟踪，制定产品使用标准流程；</li>
+				<li>4、	产品使用培训工作；</li>
+			</ol>
+		</li>
+		<li>
+			<h3>文员</h3>
+			<ol>
+				<li>1、	接受客户咨询，并记录整理及汇报；</li>
+				<li>2、	协助区域经理做好客户资料收集与整理，订单管理，跟踪客户动态；</li>
+				<li>3、	熟悉公司办公流程，协助对接各外事部门；</li>
+				<li>4、	协助广告设计及出品</li>
+			</ol>
+		</li>
+	</ul>
+</div>
+<!--底部-->
+<div id="top" class="iconfont icon-xiangshang"></div>
+<div class="footer">
+	<div class="container">
+		<img class="hidden-sm" src="img/code.png" alt="">
+		<p>公司名称: 广州维森汽车配件有限公司</p>
+		<p>联系电话: 020-61908466</p>
+		<p>联系地址:广州市番禺区番禺大道北555号天安科技园创新大厦602室</p>
+		<p>力耐官网 版权所有 © 2001-2016 <a href="http://www.miitbeian.gov.cn/">粤ICP备09198580号-1</a></p>
+	</div>
+</div>
+</body>
+<script>
+	// 导航栏下拉菜单
+	var navCollapse = $(".header>.navbar>span");
+	navCollapse.click(function (e) {
+		$("#nav-sm").slideToggle("slow");
+	});
+	if(navigator.userAgent.indexOf("MSIE 8.0") != -1){
+		$(".navMenu").css("display","none");
+	}
+	var toTop = $("#top");
+	toTop.mouseover(function () {
+		toTop.animate({
+			backgroundColor : "#d9242a"
+		},200)
+	})
+	toTop.click(function () {
+		$("html,body").animate({scrollTop : "0px"},200)
+	})
+</script>
+</html>

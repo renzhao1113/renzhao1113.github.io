@@ -1,0 +1,25 @@
+#product{
+  .tab-nav{
+    >li{
+      cursor: pointer;
+      float: left;
+      margin: 0 10px;
+      line-height: 40px;
+      font-size: 14px;
+      &.active{
+        color: #d82127;
+      }
+    }
+  }
+  >div{
+    margin-top: 60px;
+    width: 100%;
+    display: none;
+    img{
+      width: 100%;
+    }
+    &.active{
+      display: block;
+    }
+  }
+}
