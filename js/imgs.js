@@ -1,4 +1,4 @@
-var imgs = [
+var allProimgs = [
   "img/products/product_02.png",
   "img/products/product_03.png",
   "img/products/product_04.png",
@@ -31,7 +31,7 @@ var oilImgs = [
 	"img/products/product_03.png",
 	"img/products/product_04.png",
 	"img/products/product_05.png",
-	"img/products/product_06.png",
+	"img/products/product_06.png"
 ];
 var maintainImgs = [
 	"img/products/product_08.png",
@@ -44,7 +44,7 @@ var maintainImgs = [
 	"img/products/product_15.png",
 	"img/products/product_16.png",
 	"img/products/product_18.png",
-	"img/products/product_19.png",
+	"img/products/product_19.png"
 ];
 var consumablesImgs = [
 	"img/products/product_21.png",
@@ -55,3 +55,10 @@ var consumablesImgs = [
 	"img/products/product_26.png",
 	"img/products/product_27.png"
 ]
+var imgs = {
+	0 :  allProimgs,
+	1 : oilImgs,
+	2 : maintainImgs,
+	3 : consumablesImgs
+}
+
